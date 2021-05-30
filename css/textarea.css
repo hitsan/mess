@@ -1,5 +1,11 @@
-.t_area {
-    width: 80%;
-    height: 80%;
-    background: orange;
+.centering_parent {
+    padding: 20px;              /* 余白指定 */
+    text-align:  center;        /* 中央寄せ */
+    background-color:  #ccc;    /* 背景色指定 */
+    height: 100px;              /* 高さ指定 */
+}
+
+.cc {
+    background-color:  rgb(167, 3, 93);    /* 背景色指定 */
+
 }
