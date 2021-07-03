@@ -5,16 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doumemo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div class="main_board">
+    <div class="main_board" id="piece">
         <div class="p1">
-            
+            <ul>
+                <button v-for="num in nums.p1">
+                  {{ num }}
+                </button>
+            </ul>
         </div>
-        <div class="p2">player 2</div>
-        <div class="center_board">center_board</div>
-        <div class="p3">player 3</div>
-        <div class="iam">I am</div>
+        <div class="p2">
+            <ul>
+                <button v-for="num in nums.p2">
+                  {{ num }}
+                </button>
+            </ul>
+        </div>
+        <div class="center_board">
+            <ul>
+                <button v-for="num in nums.center">
+                  {{ num }}
+                </button>
+            </ul>
+        </div>
+        <div class="p3">
+            <ul>
+                <button v-for="num in nums.p3">
+                  {{ num }}
+                </button>
+            </ul>
+        </div>
+        <div class="iam">
+            <ul>
+                <button v-for="num in nums.i">
+                  {{ num }}
+                </button>
+            </ul>
+        </div>
+        <input type="text" v-model="ans">
+        <button v-on:click="judge">judge</button>
+        <div v-if="this.result == 1">
+            {{ result }}
+        </div>
     </div>
+    <script>
+        new Vue({
+            el: '#piece',
+            data:{
+                nums: {
+                    p1: [0, 1, 2, 3, 4],
+                    p2: [0, 1, 2, 3, 4],
+                    p3: [0, 1, 2, 3, 4],
+                    i:  [0, 1, 2, 3, 4],
+                    center: [0, 1, 2, 3, 4]
+                },
+                ans: 0,
+                result: ""
+            },
+            methods: {
+                judge: function() {
+                    if(ans == 1){
+                        result = "OK"
+                    }else{
+                        result = "FAIL"
+                    }
+                }
+            },
+        })
+    </script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 .main_board{
     width: 900px;
-    height: 900px;
+    height: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 .p1{
     width: 600px;
-    height: 200px;
+    height: 100px;
     margin: 0 auto;
     text-align: center;
 }
@@ -15,14 +15,14 @@
 .p2{
     display: inline-block;
     width: 200px;
-    height: 500px;
+    height: 400px;
     text-align: center;
 }
 
 .center_board{
     display: inline-block;
     width: 400px;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -30,13 +30,13 @@
 .p3{
     display: inline-block;
     width: 200px;
-    height: 500px;
+    height: 400px;
     text-align: center;
 }
 
 .iam{
     width: 600px;
-    height: 200px;
+    height: 100px;
     margin: 0 auto;
     text-align: center;
 }
