@@ -1,0 +1,42 @@
+.main_board{
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p1{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p2{
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    text-align: center;
+}
+
+.center_board{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p3{
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    text-align: center;
+}
+
+.iam{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
